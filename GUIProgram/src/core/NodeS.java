@@ -1,3 +1,5 @@
+package core;
+
 public class NodeS <T>{
     //Referencia al siguiente elemento o a NULL si es el ultimo
     NodeS<T> next;

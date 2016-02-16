@@ -1,3 +1,5 @@
+package core;
+
 public class ListaSimple<T>{
     // Referencia  a el node raiz o la cabeza de la lista.
     private NodeS<T> head;
