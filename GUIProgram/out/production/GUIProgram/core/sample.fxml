@@ -37,10 +37,11 @@
       <Label layoutX="238.0" layoutY="64.0" text="Funcion de Transformacion" />
       <ChoiceBox fx:id="ColisionCh" layoutX="254.0" layoutY="168.0" prefHeight="25.0" prefWidth="112.0" />
       <Label layoutX="252.0" layoutY="135.0" text="Solucion de colisiones" />
-      <TextField fx:id="claveEntry" layoutX="236.0" layoutY="303.0" />
+      <TextField fx:id="claveEntry" layoutX="186.0" layoutY="300.0" />
       <Label layoutX="273.0" layoutY="279.0" text="Clave a buscar" />
       <TextArea fx:id="auxTextArea" editable="false" layoutX="14.0" layoutY="338.0" prefHeight="216.0" prefWidth="577.0" />
       <Button layoutX="274.0" layoutY="222.0" mnemonicParsing="false" onAction="#idexTable" text="Crear tabla" />
       <Button layoutX="459.0" layoutY="275.0" mnemonicParsing="false" onAction="#clean" text="Limpiar" />
+      <Button layoutX="356.0" layoutY="300.0" mnemonicParsing="false" onAction="#search" text="Buscar" />
    </children>
 </AnchorPane>
