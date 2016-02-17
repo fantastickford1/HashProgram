@@ -2,9 +2,11 @@ package core;
 
 public class Colisiones {
 
-    int[] arreglo;
-    int[][] arreglo_anidado;
-    Funciones_Hash fh;
+    private int[] arreglo;
+    private int[][] arreglo_anidado;
+    private Funciones_Hash fh;
+    private ListaSimple lista;
+    public int contador;
 
   /**
    * Constructor que recibe dos parametros para la construccion de un objeto Colisiones.
@@ -24,22 +26,29 @@ public class Colisiones {
    * @return Regresa la posicion disponible para agregar el dato con id especifica o 0 si algo sale mal.
    */
     public int prueba_lineal(int option, int id){
+        contador = 0;
         int d;
         int dx;
         d = indexGenerator(option,id);
+        while (d >= arreglo.length){
+            d-= arreglo.length;
+            if (d < 0)
+                d = 0;
+        }
         if (arreglo[d] == 0){
           return d;
         }else{
-          dx = d + 1;
-          while ((dx <= arreglo.length) && (arreglo[dx] != id) && (dx != d) && (arreglo[dx] != 0)){
-            dx = dx + 1;
-            if (dx == arreglo.length){
-              dx = 0;
+            dx = d + 1;
+            while ((dx <= arreglo.length) && (arreglo[dx] != id) && (dx != d) && (arreglo[dx] != 0)){
+              dx = dx + 1;
+              contador++;
+                if (dx == arreglo.length){
+                    dx = 0;
+                }
             }
-          }
-          if (arreglo[dx] == 0){
-            return dx;
-          }
+            if (arreglo[dx] == 0){
+                return dx;
+            }
         }
         return 0;
     }
@@ -51,19 +60,31 @@ public class Colisiones {
    * @return Regresa la posicion disponible para agregar el dato con id especifica o 0 si algo sale mal.
    */
     public int prueba_cuadratica(int option, int id) {
+        contador = 0;
         int d;
         int dx;
         int i;
         d = indexGenerator(option,id);
+        while (d >= arreglo.length){
+            d-= arreglo.length;
+            if (d < 0)
+                d = 0;
+        }
         if (arreglo[d] == 0){
             return d;
         }else{
             i = 1;
             dx = d + (int) Math.pow(i,2);
+            while (dx >= arreglo.length){
+                dx-= arreglo.length;
+                if (dx < 0)
+                    dx = 0;
+            }
             while ((arreglo[dx] != id) && (arreglo[dx] != 0)){
-            i++;
-            dx = d + (int) Math.pow(i,2);
-                if (dx > arreglo.length){
+                contador++;
+                i++;
+                dx = d + (int) Math.pow(i,2);
+                if (dx >= arreglo.length){
                     i = 0;
                     dx = 0;
                     d = 1;
@@ -83,15 +104,32 @@ public class Colisiones {
    * @return Regresa la posicion disponible para agregar el dato con id especifica o 0 si algo sale mal.
    */
     public int dobleDireccion(int option, int id){
+        contador = 0;
         int d;
         int dx;
         d = indexGenerator(option,id);
+        while (d >= arreglo.length){
+            d-= arreglo.length;
+            if (d < 0)
+                d = 0;
+        }
         if (arreglo[d] == 0){
         return d;
         }else{
             dx = indexGenerator(option,d);
+            while (dx >= arreglo.length){
+                dx-= arreglo.length;
+                if (dx < 0)
+                    dx = 0;
+            }
             while ((dx <= arreglo.length) && (arreglo[dx] != id) && (arreglo[dx] != 0) && (dx != d) ){
+                contador++;
                 dx = indexGenerator(option,dx);
+                while (dx >= arreglo.length){
+                    dx-= arreglo.length;
+                    if (dx < 0)
+                        dx = 0;
+                }
             }
             if (arreglo[dx] == 0){
                 return dx;
@@ -100,27 +138,56 @@ public class Colisiones {
         return 0;
     }
 
+    /**
+     * Metodo que resuelve la colision mediante arreglos anidados
+     * @param option Funcion Hash a usar, 1 - Modulo, 2 - Cuadratica, 3 - Truncamiento, 4 - Plegamiento.
+     * @param id Identificador o clave del dato a guardar.
+     * @return Regresa las coordenadas de una posicion vacia del arreglo bidimensional.
+     */
     public String arreglosAnidados(int option, int id){
+        contador = 0;
         int d;
         int second = 0;
         d = indexGenerator(option,id);
+        while (d >= arreglo.length){
+            d-= arreglo.length;
+            if (d < 0)
+                d = 0;
+        }
         if(arreglo_anidado[d][second] == 0){
             return d + "," + second;
         }else{
             while(arreglo_anidado[d][second] != 0){
                 second++;
-                if (arreglo_anidado[d][second] == 0){
+                contador++;
+                if (arreglo_anidado[d][second] == 0)
                     return d + "," + second;
-                }
             }
         }
         return "";
     }
 
+    /**
+     * Metodo para setear el arreglo anidado a usar para el metodo de arreglosAnidados
+     * @param arreglo_anidado arreglo bidimensional a usar en el metodo de arreglosAnidados
+     */
     public void setBidimensionalArray(int[][]arreglo_anidado){
         this.arreglo_anidado = arreglo_anidado;
     }
 
+    /*public void encadenamiento(int option,int id){
+        int d;
+        d = indexGenerator(option, id);
+        if ((ListaSimple) lista.get(d).getData() == null){
+            lista.add(new ListaSimple<Integer>());
+        }
+
+    }
+
+    public void setLista(ListaSimple lista){
+        this.lista = lista;
+    }
+*/
   /**
    * Metodo que se usa como auxiliar para el uso correcto de la funcion hash dependiendo la opcion elegida
    * @param option Funcion Hash a usar, 1 - Modulo, 2 - Cuadratica, 3 - Truncamiento, 4 - Plegamiento.

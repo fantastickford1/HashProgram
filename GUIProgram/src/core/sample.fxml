@@ -8,8 +8,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/null" fx:controller="core.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.Controller">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="600.0">
         <menus>
@@ -42,5 +41,6 @@
       <Label layoutX="273.0" layoutY="279.0" text="Clave a buscar" />
       <TextArea fx:id="auxTextArea" editable="false" layoutX="14.0" layoutY="338.0" prefHeight="216.0" prefWidth="577.0" />
       <Button layoutX="274.0" layoutY="222.0" mnemonicParsing="false" onAction="#idexTable" text="Crear tabla" />
+      <Button layoutX="459.0" layoutY="275.0" mnemonicParsing="false" onAction="#clean" text="Limpiar" />
    </children>
 </AnchorPane>
