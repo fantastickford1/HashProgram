@@ -23,11 +23,14 @@ public class Controller implements Initializable {
 
     Funciones_Hash fh;
     Colisiones cl;
+    Busqueda bs;
     FileChooser fileChooser;
     File textFile;
     Stage stage;
     String data;
     int[] idsList; //Ids
+    int[] indexs;
+    int[][] doubleIndex;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -80,8 +83,8 @@ public class Controller implements Initializable {
     @FXML private void idexTable(){
 
         fh = new Funciones_Hash();
-        int[] indexs = new int[idsList.length];
-        int[][] doubleIndex = new int[idsList.length][idsList.length];
+        indexs = new int[idsList.length];
+        doubleIndex = new int[idsList.length][idsList.length];
         cl = new Colisiones(indexs,fh);
         String auxPrint = "";
         int index;
@@ -305,10 +308,6 @@ public class Controller implements Initializable {
             default:
                 break;
         }
-        indexs = null;
-        doubleIndex = null;
-        /*fh = null;
-        cl = null;*/
     }
 
     @FXML private void search(){
@@ -316,20 +315,21 @@ public class Controller implements Initializable {
         String colisionOption = (String) ColisionCh.getSelectionModel().getSelectedItem();
         String claveSearch = claveEntry.getText();
         int indexSearch = Integer.parseInt(claveSearch);
+        bs = new Busqueda(indexs,fh);
         switch (option){
             case "Funcion Modulo":
                 switch (colisionOption){
                     case "Prueba Lineal":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_lineal(1,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(1,indexSearch));
                         break;
                     case "Prueba Cuadratica":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_cuadratica(1,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(1,indexSearch));
                         break;
                     case "Doble Dirección Hash":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.dobleDireccion(1,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(1,indexSearch));
                         break;
                     case "Arreglos Anidados":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.arreglosAnidados(1,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(1,indexSearch));
                         break;
                     default:
                         break;
@@ -338,16 +338,16 @@ public class Controller implements Initializable {
             case "Funcion Cuadratica":
                 switch (colisionOption){
                     case "Prueba Lineal":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_lineal(2,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(2,indexSearch));
                         break;
                     case "Prueba Cuadratica":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_cuadratica(2,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(2,indexSearch));
                         break;
                     case "Doble Dirección Hash":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.dobleDireccion(2,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(2,indexSearch));
                         break;
                     case "Arreglos Anidados":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.arreglosAnidados(2,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(2,indexSearch));
                         break;
                     default:
                         break;
@@ -356,16 +356,16 @@ public class Controller implements Initializable {
             case "Funcion Truncamiento":
                 switch (colisionOption){
                     case "Prueba Lineal":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_lineal(3,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(3,indexSearch));
                         break;
                     case "Prueba Cuadratica":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_cuadratica(3,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(3,indexSearch));
                         break;
                     case "Doble Dirección Hash":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.dobleDireccion(3,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(3,indexSearch));
                         break;
                     case "Arreglos Anidados":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.arreglosAnidados(3,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(3,indexSearch));
                         break;
                     default:
                         break;
@@ -374,16 +374,16 @@ public class Controller implements Initializable {
             case "Funcion Plegamiento":
                 switch (colisionOption){
                     case "Prueba Lineal":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_lineal(4,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(4,indexSearch));
                         break;
                     case "Prueba Cuadratica":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.prueba_cuadratica(4,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(4,indexSearch));
                         break;
                     case "Doble Dirección Hash":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.dobleDireccion(4,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(4,indexSearch));
                         break;
                     case "Arreglos Anidados":
-                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + cl.arreglosAnidados(4,indexSearch));
+                        auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(4,indexSearch));
                         break;
                     default:
                         break;
@@ -396,5 +396,10 @@ public class Controller implements Initializable {
 
     @FXML private void clean(){
         indicesArea.setText("");
+    }
+
+    @FXML private void reset(){
+        indexs = null;
+        doubleIndex = null;
     }
 }
