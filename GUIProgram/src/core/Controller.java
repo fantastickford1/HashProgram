@@ -136,11 +136,14 @@ public class Controller implements Initializable {
                         break;
                     case "Arreglos Anidados":
                         cl.setBidimensionalArray(doubleIndex);
+                        auxPrint = "";
                         for (int i = 0; i < idsList.length ; i++) {
                             cord = cl.arreglosAnidados(1,idsList[i]);
                             String[] auxW = cord.split(",");
                             doubleIndex[Integer.parseInt(auxW[0])][Integer.parseInt(auxW[1])] = idsList[i];
+                            auxPrint += idsList[i] + "->" + cord + "\n";
                         }
+                        auxTextArea.appendText(auxPrint);
                         break;
                     default:
                         break;
@@ -189,11 +192,14 @@ public class Controller implements Initializable {
                         break;
                     case "Arreglos Anidados":
                         cl.setBidimensionalArray(doubleIndex);
+                        auxPrint = "";
                         for (int i = 0; i < idsList.length ; i++) {
                             cord = cl.arreglosAnidados(2,idsList[i]);
                             String[] auxW = cord.split(",");
                             doubleIndex[Integer.parseInt(auxW[0])][Integer.parseInt(auxW[1])] = idsList[i];
+                            auxPrint += idsList[i] + "->" + cord + "\n";
                         }
+                        auxTextArea.appendText(auxPrint);
                         break;
                     default:
                         break;
@@ -242,11 +248,14 @@ public class Controller implements Initializable {
                         break;
                     case "Arreglos Anidados":
                         cl.setBidimensionalArray(doubleIndex);
+                        auxPrint = "";
                         for (int i = 0; i < idsList.length ; i++) {
                             cord = cl.arreglosAnidados(3,idsList[i]);
                             String[] auxW = cord.split(",");
                             doubleIndex[Integer.parseInt(auxW[0])][Integer.parseInt(auxW[1])] = idsList[i];
+                            auxPrint += idsList[i] + "->" + cord + "\n";
                         }
+                        auxTextArea.appendText(auxPrint);
                         break;
                     default:
                         break;
@@ -295,11 +304,14 @@ public class Controller implements Initializable {
                         break;
                     case "Arreglos Anidados":
                         cl.setBidimensionalArray(doubleIndex);
+                        auxPrint = "";
                         for (int i = 0; i < idsList.length ; i++) {
                             cord = cl.arreglosAnidados(4,idsList[i]);
                             String[] auxW = cord.split(",");
                             doubleIndex[Integer.parseInt(auxW[0])][Integer.parseInt(auxW[1])] = idsList[i];
+                            auxPrint += idsList[i] + "->" + cord + "\n";
                         }
+                        auxTextArea.appendText(auxPrint);
                         break;
                     default:
                         break;

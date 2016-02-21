@@ -128,10 +128,10 @@ public class Busqueda {
             if (d < 0)
                 d = 0;
         }
-        if(arreglo_anidado[d][second] == id){
+        if(arreglo_anidado[d][second] == 0){
             return d + "," + second;
         }else{
-            while(arreglo_anidado[d][second] != id){
+            while(arreglo_anidado[d][second] != 0){
                 second++;
                 contador++;
                 if (arreglo_anidado[d][second] == 0)

@@ -87,17 +87,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="401" column="22" selection-start-line="401" selection-start-column="22" selection-end-line="401" selection-end-column="22" />
+            <state vertical-scroll-proportion="3.6541095">
+              <caret line="343" column="122" selection-start-line="343" selection-start-column="122" selection-end-line="343" selection-end-column="122" />
               <folding>
                 <element signature="method#initialize#0;class#Controller#0" expanded="false" />
                 <element signature="method#openFile#0;class#Controller#0" expanded="false" />
                 <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-                <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-                <element signature="method#search#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -116,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Colisiones.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Colisiones.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36301368">
-              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
               <folding>
                 <element signature="docComment;method#Colisiones#0;class#Colisiones#0" expanded="false" />
                 <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
@@ -138,13 +136,12 @@
         <entry file="file://$PROJECT_DIR$/src/core/Busqueda.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <caret line="130" column="42" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="42" />
               <folding>
                 <element signature="method#Busqueda#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#prueba_lineal#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#prueba_cuadratica#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#dobleDireccion#0;class#Busqueda#0" expanded="false" />
-                <element signature="method#arreglosAnidados#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#indexGenerator#0;class#Busqueda#0" expanded="false" />
               </folding>
             </state>
@@ -177,10 +174,10 @@
         <option value="$PROJECT_DIR$/src/core/Funciones_Hash.java" />
         <option value="$PROJECT_DIR$/src/core/NodeS.java" />
         <option value="$PROJECT_DIR$/src/core/ListaSimple.java" />
-        <option value="$PROJECT_DIR$/src/core/Busqueda.java" />
-        <option value="$PROJECT_DIR$/src/core/Controller.java" />
         <option value="$PROJECT_DIR$/src/core/sample.fxml" />
         <option value="$PROJECT_DIR$/src/core/Colisiones.java" />
+        <option value="$PROJECT_DIR$/src/core/Controller.java" />
+        <option value="$PROJECT_DIR$/src/core/Busqueda.java" />
       </list>
     </option>
   </component>
@@ -264,9 +261,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -769,14 +766,15 @@
       <workItem from="1455750201761" duration="6100000" />
       <workItem from="1455757936479" duration="159000" />
       <workItem from="1456023958599" duration="616000" />
+      <workItem from="1456025079895" duration="2049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58480000" />
+    <option name="totallyTimeSpent" value="60529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -830,12 +828,24 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/core/Controller.java</url>
-          <line>394</line>
+          <line>406</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/core/Busqueda.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/core/Busqueda.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -881,8 +891,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -944,8 +952,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1007,8 +1013,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1070,8 +1074,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1140,8 +1142,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1203,8 +1203,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1266,8 +1264,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1315,8 +1311,6 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1400,39 +1394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="401" column="22" selection-start-line="401" selection-start-column="22" selection-end-line="401" selection-end-column="22" />
-          <folding>
-            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
-            <element signature="method#openFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
-            <element signature="method#search#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Busqueda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="method#Busqueda#0;class#Busqueda#0" expanded="false" />
-            <element signature="method#prueba_lineal#0;class#Busqueda#0" expanded="false" />
-            <element signature="method#prueba_cuadratica#0;class#Busqueda#0" expanded="false" />
-            <element signature="method#dobleDireccion#0;class#Busqueda#0" expanded="false" />
-            <element signature="method#arreglosAnidados#0;class#Busqueda#0" expanded="false" />
-            <element signature="method#indexGenerator#0;class#Busqueda#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36301368">
-          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
           <folding>
             <element signature="docComment;method#Colisiones#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
@@ -1441,6 +1406,32 @@
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Busqueda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="42" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="42" />
+          <folding>
+            <element signature="method#Busqueda#0;class#Busqueda#0" expanded="false" />
+            <element signature="method#prueba_lineal#0;class#Busqueda#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Busqueda#0" expanded="false" />
+            <element signature="method#dobleDireccion#0;class#Busqueda#0" expanded="false" />
+            <element signature="method#indexGenerator#0;class#Busqueda#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.6541095">
+          <caret line="343" column="122" selection-start-line="343" selection-start-column="122" selection-end-line="343" selection-end-column="122" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#openFile#0;class#Controller#0" expanded="false" />
+            <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
