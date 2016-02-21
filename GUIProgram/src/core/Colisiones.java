@@ -39,6 +39,11 @@ public class Colisiones {
           return d;
         }else{
             dx = d + 1;
+            while (dx >= arreglo.length){
+                dx-= arreglo.length;
+                if (dx < 0)
+                    dx = 0;
+            }
             while ((dx <= arreglo.length) && (arreglo[dx] != id) && (dx != d) && (arreglo[dx] != 0)){
               dx = dx + 1;
               contador++;
