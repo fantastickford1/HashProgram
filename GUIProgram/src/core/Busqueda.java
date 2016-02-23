@@ -10,6 +10,7 @@ public class Busqueda {
     private Funciones_Hash fh;
     private ListaSimple lista;
     public int contador;
+    private int crash;
 
     public Busqueda(int[] arreglo, Funciones_Hash fh){
         this.arreglo = arreglo;
@@ -42,7 +43,7 @@ public class Busqueda {
                 return dx;
             }
         }
-        return 0;
+        return -1;
     }
 
     public int prueba_cuadratica(int option, int id) {
@@ -75,12 +76,16 @@ public class Busqueda {
                     dx = 0;
                     d = 1;
                 }
+                crash++;
+                if (crash > 30){
+                    return -1;
+                }
             }
             if (arreglo[dx] == id){
                 return dx;
             }
         }
-        return 0;
+        return -1;
     }
 
     public int dobleDireccion(int option, int id){
@@ -110,12 +115,16 @@ public class Busqueda {
                     if (dx < 0)
                         dx = 0;
                 }
+                crash++;
+                if (crash > 30){
+                    return -1;
+                }
             }
             if (arreglo[dx] == id){
                 return dx;
             }
         }
-        return 0;
+        return -1;
     }
 
     public String arreglosAnidados(int option, int id){
@@ -128,17 +137,21 @@ public class Busqueda {
             if (d < 0)
                 d = 0;
         }
-        if(arreglo_anidado[d][second] == 0){
+        if(arreglo_anidado[d][second] == id){
             return d + "," + second;
         }else{
-            while(arreglo_anidado[d][second] != 0){
+            while(arreglo_anidado[d][second] != id){
                 second++;
                 contador++;
-                if (arreglo_anidado[d][second] == 0)
+                if (arreglo_anidado[d][second] == id)
                     return d + "," + second;
             }
         }
         return "";
+    }
+
+    public void setBidimensionalArray(int[][]arreglo_anidado){
+        this.arreglo_anidado = arreglo_anidado;
     }
 
     private int indexGenerator(int option,int id){

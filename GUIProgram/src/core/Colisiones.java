@@ -7,6 +7,7 @@ public class Colisiones {
     private Funciones_Hash fh;
     private ListaSimple lista;
     public int contador;
+    private int crash = 0;
 
   /**
    * Constructor que recibe dos parametros para la construccion de un objeto Colisiones.
@@ -55,7 +56,7 @@ public class Colisiones {
                 return dx;
             }
         }
-        return 0;
+        return -1;
     }
 
   /**
@@ -94,12 +95,16 @@ public class Colisiones {
                     dx = 0;
                     d = 1;
                 }
+                crash++;
+                if (crash > 30){
+                    return -1;
+                }
             }
             if (arreglo[dx] == 0){
                 return dx;
             }
         }
-        return 0;
+        return -1;
     }
 
   /**
@@ -135,12 +140,16 @@ public class Colisiones {
                     if (dx < 0)
                         dx = 0;
                 }
+                crash++;
+                if (crash > 30){
+                    return -1;
+                }
             }
             if (arreglo[dx] == 0){
                 return dx;
             }
         }
-        return 0;
+        return -1;
     }
 
     /**

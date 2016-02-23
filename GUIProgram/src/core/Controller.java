@@ -104,7 +104,8 @@ public class Controller implements Initializable {
                     case "Prueba Lineal":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_lineal(1,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -115,7 +116,8 @@ public class Controller implements Initializable {
                     case "Prueba Cuadratica":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_cuadratica(1,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -126,7 +128,8 @@ public class Controller implements Initializable {
                     case "Doble Dirección Hash":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.dobleDireccion(1,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -160,7 +163,8 @@ public class Controller implements Initializable {
                     case "Prueba Lineal":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_lineal(2,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -171,7 +175,8 @@ public class Controller implements Initializable {
                     case "Prueba Cuadratica":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_cuadratica(2,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -182,7 +187,8 @@ public class Controller implements Initializable {
                     case "Doble Dirección Hash":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.dobleDireccion(2,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -216,7 +222,8 @@ public class Controller implements Initializable {
                     case "Prueba Lineal":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_lineal(3,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -227,7 +234,8 @@ public class Controller implements Initializable {
                     case "Prueba Cuadratica":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_cuadratica(3,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -238,7 +246,8 @@ public class Controller implements Initializable {
                     case "Doble Dirección Hash":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.dobleDireccion(3,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -272,7 +281,8 @@ public class Controller implements Initializable {
                     case "Prueba Lineal":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_lineal(4,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -283,7 +293,8 @@ public class Controller implements Initializable {
                     case "Prueba Cuadratica":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.prueba_cuadratica(4,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -294,7 +305,8 @@ public class Controller implements Initializable {
                     case "Doble Dirección Hash":
                         for (int i = 0; i < idsList.length;i++){
                             index = cl.dobleDireccion(4,idsList[i]);
-                            indexs[index] = idsList[i];
+                            if (index != -1)
+                                indexs[index] = idsList[i];
                         }
                         auxPrint = "";
                         for (int w = 0; w < idsList.length; w++){
@@ -328,6 +340,7 @@ public class Controller implements Initializable {
         String claveSearch = claveEntry.getText();
         int indexSearch = Integer.parseInt(claveSearch);
         bs = new Busqueda(indexs,fh);
+        bs.setBidimensionalArray(doubleIndex);
         switch (option){
             case "Funcion Modulo":
                 switch (colisionOption){
