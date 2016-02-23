@@ -5,7 +5,7 @@ public class Colisiones {
     private int[] arreglo;
     private int[][] arreglo_anidado;
     private Funciones_Hash fh;
-    private ListaSimple lista;
+    private ListaSimple lista = new ListaSimple();
     public int contador;
     private int crash = 0;
 
@@ -189,20 +189,37 @@ public class Colisiones {
         this.arreglo_anidado = arreglo_anidado;
     }
 
-    /*public void encadenamiento(int option,int id){
-        int d;
-        d = indexGenerator(option, id);
-        if ((ListaSimple) lista.get(d).getData() == null){
-            lista.add(new ListaSimple<Integer>());
+    /** Metodo para encadenar en una lista las claves que colisionan con otras claves
+     * @param tamaño Numero de datos
+     * @param datos Arreglo de datos para almacenar
+     * @param option Opsion para generar su indice
+     */
+    public String[] Encadenarminto(int tamaño,int[] datos,int option){
+        String[] Out = new String[tamaño];
+        for (int i = 1;i <= tamaño;i++){
+            lista.add("");
+            Out[i-1] = i+" ->";
         }
-
+        for (int i = 1;i <= tamaño;i++){
+            int indexDato = indexGenerator(option,datos[i-1]);
+            lista.modificarDato(indexDato,datos[i-1]);
+        }
+        for (int i = 1; i <= tamaño;i++){
+            NodeS<NodeS> aux = lista.get(i);
+            Out[i-1] += aux.getData();
+            while (aux.getCollision() != null){
+                aux = aux.getCollision();
+                Out[i-1] +=" -> "+ aux.getData() ;
+            }
+        }
+        return Out;
     }
 
-    public void setLista(ListaSimple lista){
-        this.lista = lista;
+    public ListaSimple getLista(){
+        return this.lista;
     }
-*/
-  /**
+
+    /**
    * Metodo que se usa como auxiliar para el uso correcto de la funcion hash dependiendo la opcion elegida
    * @param option Funcion Hash a usar, 1 - Modulo, 2 - Cuadratica, 3 - Truncamiento, 4 - Plegamiento.
    * @param id Identificador o clave del dato a guardar.

@@ -3,6 +3,7 @@ package core;
 public class NodeS <T>{
     //Referencia al siguiente elemento o a NULL si es el ultimo
     NodeS<T> next;
+    NodeS<T> collision = null;
     T data;
     // NodeS constructor
     public NodeS(T dataValue) {
@@ -29,6 +30,14 @@ public class NodeS <T>{
 
     public void setNext(NodeS<T> nextValue) {
         next = nextValue;
+    }
+
+    public void setCollision(NodeS<T> nextValue){
+        collision = nextValue;
+    }
+
+    public NodeS<T> getCollision(){
+        return collision;
     }
 
 }

@@ -11,6 +11,7 @@ public class Busqueda {
     private ListaSimple lista;
     public int contador;
     private int crash;
+    public int clave;
 
     public Busqueda(int[] arreglo, Funciones_Hash fh){
         this.arreglo = arreglo;
@@ -152,6 +153,44 @@ public class Busqueda {
 
     public void setBidimensionalArray(int[][]arreglo_anidado){
         this.arreglo_anidado = arreglo_anidado;
+    }
+
+    public String encadenamiento(int dato , int option , ListaSimple lista){
+
+        String datafound ="";
+
+        clave = indexGenerator(option,dato);
+
+        NodeS<NodeS> result = lista.get(clave);
+        String stringaux =""+result.getData();
+        if (stringaux.compareTo(""+dato)==0){
+            datafound =stringaux;
+            return datafound;
+        }else {
+            if (result.getCollision() != null){
+                NodeS<NodeS> aux = result.getCollision();
+                while (aux != null){
+                    contador++;
+
+                    stringaux =""+aux.getData();
+                    if (stringaux.compareTo(""+dato)==0){
+                        System.out.println("Encotrado: "+result.getData());
+                        datafound = ""+result.getData();
+                        return datafound;
+                    }
+                    aux = aux.getCollision();
+                }
+            }
+        }
+        return datafound;
+    }
+
+    public int getContador(){
+        return contador;
+    }
+
+    public int getClave() {
+        return clave;
     }
 
     private int indexGenerator(int option,int id){

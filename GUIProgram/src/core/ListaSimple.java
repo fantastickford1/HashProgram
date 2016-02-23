@@ -41,6 +41,36 @@ public class ListaSimple<T>{
         return Current;
     }
 
+    public String modificarDato(int index,int dato){
+        if (index <= 0){
+            return "";
+        }
+
+        NodeS<T> Current = head.getNext();
+        for (int i = 1; i < index; i++) {
+            if (Current.getNext() == null)
+                return "";
+            Current = Current.getNext();
+        }
+
+        if (Current.getData().toString().compareTo("")==0){
+            Current.setData((T)(""+dato));
+        }else {
+            if (Current.getCollision() != null){
+                while (Current.getCollision() != null){
+                    Current = Current.getCollision();
+                }
+                NodeS<T> aux = new NodeS<>((T)(""+dato));
+                Current.setCollision(aux);
+            }else {
+
+                NodeS<T> aux = new NodeS<>((T)(""+dato));
+                Current.setCollision(aux);
+            }
+        }
+        return "";
+    }
+
     public boolean remove(int index)
     // remueve el elemento en la posición indicada
     {
