@@ -2,6 +2,7 @@ package core;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -28,6 +29,7 @@ public class Controller implements Initializable {
     File textFile;
     Stage stage;
     String data;
+    Alert Result;
     int[] idsList; //Ids
     int[] indexs;
     int[][] doubleIndex;
@@ -36,7 +38,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         hashCodeCh.getItems().addAll("Funcion Modulo","Funcion Cuadratica","Funcion Truncamiento","Funcion Plegamiento");
         hashCodeCh.getSelectionModel().selectFirst();
-        ColisionCh.getItems().addAll("Prueba Lineal","Prueba Cuadratica","Doble Dirección Hash","Arreglos Anidados");
+        ColisionCh.getItems().addAll("Prueba Lineal","Prueba Cuadratica","Doble Dirección Hash","Arreglos Anidados","Encadenamiento");
         ColisionCh.getSelectionModel().selectFirst();
     }
 
@@ -100,6 +102,7 @@ public class Controller implements Initializable {
                     auxPrint += fh.func_Modulo(idsList[o], idsList.length) + "\n";
                 }
                 indicesArea.appendText(auxPrint);
+
                 switch (colisionOption){
                     case "Prueba Lineal":
                         for (int i = 0; i < idsList.length;i++){
@@ -145,6 +148,18 @@ public class Controller implements Initializable {
                         }
                         auxTextArea.appendText(auxPrint);
                         break;
+
+                    case "Encadenamiento":
+                        auxPrint = "";
+                        String[] Salida = cl.Encadenarminto(idsList.length,idsList,1);
+
+                        for (String a:Salida) {
+                            auxPrint+= a +"\n";
+                        }
+
+                        auxTextArea.appendText(auxPrint);
+                        break;
+
                     default:
                         break;
                 }
@@ -199,6 +214,16 @@ public class Controller implements Initializable {
                             doubleIndex[Integer.parseInt(auxW[0])][Integer.parseInt(auxW[1])] = idsList[i];
                             auxPrint += idsList[i] + "->" + cord + "\n";
                         }
+                        auxTextArea.appendText(auxPrint);
+                        break;
+                    case "Encadenamiento":
+                        auxPrint = "";
+                        String[] Salida = cl.Encadenarminto(idsList.length,idsList,2);
+
+                        for (String a:Salida) {
+                            auxPrint+= a +"\n";
+                        }
+
                         auxTextArea.appendText(auxPrint);
                         break;
                     default:
@@ -257,6 +282,17 @@ public class Controller implements Initializable {
                         }
                         auxTextArea.appendText(auxPrint);
                         break;
+                    case "Encadenamiento":
+                        auxPrint = "";
+                        String[] Salida = cl.Encadenarminto(idsList.length,idsList,3);
+
+                        for (String a:Salida) {
+                            auxPrint+= a +"\n";
+                        }
+
+                        auxTextArea.appendText(auxPrint);
+                        break;
+
                     default:
                         break;
                 }
@@ -313,6 +349,16 @@ public class Controller implements Initializable {
                         }
                         auxTextArea.appendText(auxPrint);
                         break;
+                    case "Encadenamiento":
+                        auxPrint = "";
+                        String[] Salida = cl.Encadenarminto(idsList.length,idsList,4);
+
+                        for (String a:Salida) {
+                            auxPrint+= a +"\n";
+                        }
+
+                        auxTextArea.appendText(auxPrint);
+                        break;
                     default:
                         break;
                 }
@@ -343,6 +389,24 @@ public class Controller implements Initializable {
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(1,indexSearch));
                         break;
+                    case "Encadenamiento":
+                        String result;
+                        result = bs.encadenamiento(Integer.parseInt(claveSearch),1,cl.getLista());
+                        if (result.compareTo("") == 0) {
+                            Result = new Alert(Alert.AlertType.ERROR);
+                            Result.setTitle("Error");
+                            Result.setHeaderText("Dato "+claveSearch+" no encontrado");
+
+                            Result.showAndWait();
+                        }else {
+                            Result = new Alert(Alert.AlertType.CONFIRMATION);
+                            Result.setTitle("Exito");
+                            Result.setHeaderText("Dato "+claveSearch+" encontrado");
+                            Result.setContentText("Indice: "+bs.getClave()+"\n" +
+                                    "Complejidad: " + bs.getContador());
+                            Result.showAndWait();
+                        }
+                        break;
                     default:
                         break;
                 }
@@ -360,6 +424,24 @@ public class Controller implements Initializable {
                         break;
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(2,indexSearch));
+                        break;
+                    case "Encadenamiento":
+                        String result;
+                        result = bs.encadenamiento(Integer.parseInt(claveSearch),2,cl.getLista());
+                        if (result.compareTo("") == 0) {
+                            Result = new Alert(Alert.AlertType.ERROR);
+                            Result.setTitle("Error");
+                            Result.setHeaderText("Dato "+claveSearch+" no encontrado");
+
+                            Result.showAndWait();
+                        }else {
+                            Result = new Alert(Alert.AlertType.CONFIRMATION);
+                            Result.setTitle("Exito");
+                            Result.setHeaderText("Dato "+claveSearch+" encontrado");
+                            Result.setContentText("Indice: "+bs.getClave()+"\n" +
+                                    "Complejidad: " + bs.getContador());
+                            Result.showAndWait();
+                        }
                         break;
                     default:
                         break;
@@ -379,6 +461,24 @@ public class Controller implements Initializable {
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(3,indexSearch));
                         break;
+                    case "Encadenamiento":
+                        String result;
+                        result = bs.encadenamiento(Integer.parseInt(claveSearch),3,cl.getLista());
+                        if (result.compareTo("") == 0) {
+                            Result = new Alert(Alert.AlertType.ERROR);
+                            Result.setTitle("Error");
+                            Result.setHeaderText("Dato "+claveSearch+" no encontrado");
+
+                            Result.showAndWait();
+                        }else {
+                            Result = new Alert(Alert.AlertType.CONFIRMATION);
+                            Result.setTitle("Exito");
+                            Result.setHeaderText("Dato "+claveSearch+" encontrado");
+                            Result.setContentText("Indice: "+bs.getClave()+"\n" +
+                                    "Complejidad: " + bs.getContador());
+                            Result.showAndWait();
+                        }
+                        break;
                     default:
                         break;
                 }
@@ -396,6 +496,24 @@ public class Controller implements Initializable {
                         break;
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(4,indexSearch));
+                        break;
+                    case "Encadenamiento":
+                        String result;
+                        result = bs.encadenamiento(Integer.parseInt(claveSearch),4,cl.getLista());
+                        if (result.compareTo("") == 0) {
+                            Result = new Alert(Alert.AlertType.ERROR);
+                            Result.setTitle("Error");
+                            Result.setHeaderText("Dato "+claveSearch+" no encontrado");
+
+                            Result.showAndWait();
+                        }else {
+                            Result = new Alert(Alert.AlertType.CONFIRMATION);
+                            Result.setTitle("Exito");
+                            Result.setHeaderText("Dato "+claveSearch+" encontrado");
+                            Result.setContentText("Indice: "+bs.getClave()+"\n" +
+                                    "Complejidad: " + bs.getContador());
+                            Result.showAndWait();
+                        }
                         break;
                     default:
                         break;
