@@ -66,7 +66,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#532#533#0" expanded="false" />
+                <element signature="e#560#561#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,17 +91,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="308" column="32" selection-start-line="308" selection-start-column="32" selection-end-line="308" selection-end-column="32" />
+            <state vertical-scroll-proportion="1.3184818">
+              <caret line="390" column="43" selection-start-line="390" selection-start-column="43" selection-end-line="390" selection-end-column="43" />
               <folding>
                 <element signature="method#initialize#0;class#Controller#0" expanded="false" />
                 <element signature="method#openFile#0;class#Controller#0" expanded="false" />
                 <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-                <element signature="e#19147#19148#0" expanded="true" />
-                <element signature="e#19186#19187#0" expanded="true" />
+                <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+                <element signature="method#reset#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -120,19 +124,21 @@
         <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="160" column="34" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="34" />
+              <caret line="204" column="54" selection-start-line="204" selection-start-column="54" selection-end-line="204" selection-end-column="54" />
               <folding>
                 <element signature="method#Colisiones#0;class#Colisiones#0" expanded="false" />
                 <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
                 <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
                 <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+                <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
                 <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
                 <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
                 <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
                 <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
                 <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-                <element signature="e#6069#6070#0" expanded="true" />
-                <element signature="e#6123#6124#0" expanded="true" />
+                <element signature="e#6089#6090#0" expanded="false" />
+                <element signature="e#6143#6144#0" expanded="false" />
+                <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
                 <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
                 <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
               </folding>
@@ -140,19 +146,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Busqueda.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListaSimple.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/ListaSimple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="23" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/NodeS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+              <folding>
+                <element signature="e#525#526#0" expanded="false" />
+                <element signature="e#557#558#0" expanded="false" />
+                <element signature="e#590#591#0" expanded="false" />
+                <element signature="e#617#618#0" expanded="false" />
+                <element signature="e#664#665#0" expanded="false" />
+                <element signature="e#696#697#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Busqueda.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Busqueda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2014134">
-              <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
                 <element signature="method#Busqueda#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#prueba_lineal#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#prueba_cuadratica#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#dobleDireccion#0;class#Busqueda#0" expanded="false" />
                 <element signature="method#arreglosAnidados#0;class#Busqueda#0" expanded="false" />
-                <element signature="e#4051#4052#0" expanded="true" />
-                <element signature="e#4105#4106#0" expanded="true" />
+                <element signature="e#4073#4074#0" expanded="false" />
+                <element signature="e#4127#4128#0" expanded="false" />
+                <element signature="method#encadenamiento#0;class#Busqueda#0" expanded="false" />
+                <element signature="e#5135#5136#0" expanded="false" />
+                <element signature="e#5166#5167#0" expanded="false" />
+                <element signature="e#5195#5196#0" expanded="false" />
+                <element signature="e#5223#5224#0" expanded="false" />
                 <element signature="method#indexGenerator#0;class#Busqueda#0" expanded="false" />
               </folding>
             </state>
@@ -183,12 +221,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/core/Main.java" />
         <option value="$PROJECT_DIR$/src/core/Funciones_Hash.java" />
-        <option value="$PROJECT_DIR$/src/core/NodeS.java" />
-        <option value="$PROJECT_DIR$/src/core/ListaSimple.java" />
         <option value="$PROJECT_DIR$/src/core/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/core/Controller.java" />
+        <option value="$PROJECT_DIR$/src/core/ListaSimple.java" />
+        <option value="$PROJECT_DIR$/src/core/NodeS.java" />
         <option value="$PROJECT_DIR$/src/core/Colisiones.java" />
         <option value="$PROJECT_DIR$/src/core/Busqueda.java" />
+        <option value="$PROJECT_DIR$/src/core/Controller.java" />
       </list>
     </option>
   </component>
@@ -272,9 +310,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -779,11 +817,13 @@
       <workItem from="1456023958599" duration="616000" />
       <workItem from="1456025079895" duration="2049000" />
       <workItem from="1456203270705" duration="1878000" />
+      <workItem from="1456210478438" duration="905000" />
+      <workItem from="1456212788507" duration="78000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62407000" />
+    <option name="totallyTimeSpent" value="63390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -791,29 +831,29 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49183005" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1633888" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16325037" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3970588" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3970588" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49183005" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -839,28 +879,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/core/Controller.java</url>
-          <line>419</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/core/Busqueda.java</url>
-          <line>130</line>
+          <line>131</line>
           <properties />
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/core/Controller.java</url>
-          <line>355</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/core/Controller.java</url>
-          <line>358</line>
-          <properties />
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/core/Colisiones.java</url>
@@ -889,7 +911,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -915,21 +941,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
@@ -941,13 +967,15 @@
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -958,7 +986,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -984,21 +1016,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
@@ -1010,13 +1042,15 @@
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -1027,7 +1061,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,21 +1091,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
@@ -1079,13 +1117,15 @@
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -1096,7 +1136,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,21 +1166,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
@@ -1148,13 +1192,15 @@
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -1172,7 +1218,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,21 +1248,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
@@ -1224,13 +1274,15 @@
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -1241,7 +1293,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1267,21 +1323,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
@@ -1293,13 +1349,15 @@
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -1310,7 +1368,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1336,21 +1398,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
@@ -1362,13 +1424,15 @@
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -1379,7 +1443,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1391,21 +1459,21 @@
             <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#openFile#0;class#Controller#0" expanded="false" />
             <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/jre/lib/rt.jar!/java/lang/Math.class">
@@ -1426,7 +1494,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1437,29 +1509,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/NodeS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/ListaSimple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Funciones_Hash.java">
@@ -1476,16 +1534,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/core/ListaSimple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="308" column="32" selection-start-line="308" selection-start-column="32" selection-end-line="308" selection-end-column="32" />
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/NodeS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
-            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
-            <element signature="method#openFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
-            <element signature="e#19147#19148#0" expanded="true" />
-            <element signature="e#19186#19187#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="false" />
+            <element signature="e#557#558#0" expanded="false" />
+            <element signature="e#590#591#0" expanded="false" />
+            <element signature="e#617#618#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#696#697#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1493,19 +1560,21 @@
     <entry file="file://$PROJECT_DIR$/src/core/Colisiones.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="34" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="34" />
+          <caret line="204" column="54" selection-start-line="204" selection-start-column="54" selection-end-line="204" selection-end-column="54" />
           <folding>
             <element signature="method#Colisiones#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
+            <element signature="method#prueba_cuadratica#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#setBidimensionalArray#0;class#Colisiones#0" expanded="false" />
-            <element signature="e#6069#6070#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="false" />
+            <element signature="e#6143#6144#0" expanded="false" />
+            <element signature="docComment;method#Encadenarminto#0;class#Colisiones#0" expanded="false" />
             <element signature="docComment;method#indexGenerator#0;class#Colisiones#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Colisiones#0" expanded="false" />
           </folding>
@@ -1514,17 +1583,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Busqueda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2014134">
-          <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
             <element signature="method#Busqueda#0;class#Busqueda#0" expanded="false" />
             <element signature="method#prueba_lineal#0;class#Busqueda#0" expanded="false" />
             <element signature="method#prueba_cuadratica#0;class#Busqueda#0" expanded="false" />
             <element signature="method#dobleDireccion#0;class#Busqueda#0" expanded="false" />
             <element signature="method#arreglosAnidados#0;class#Busqueda#0" expanded="false" />
-            <element signature="e#4051#4052#0" expanded="true" />
-            <element signature="e#4105#4106#0" expanded="true" />
+            <element signature="e#4073#4074#0" expanded="false" />
+            <element signature="e#4127#4128#0" expanded="false" />
+            <element signature="method#encadenamiento#0;class#Busqueda#0" expanded="false" />
+            <element signature="e#5135#5136#0" expanded="false" />
+            <element signature="e#5166#5167#0" expanded="false" />
+            <element signature="e#5195#5196#0" expanded="false" />
+            <element signature="e#5223#5224#0" expanded="false" />
             <element signature="method#indexGenerator#0;class#Busqueda#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3184818">
+          <caret line="390" column="43" selection-start-line="390" selection-start-column="43" selection-end-line="390" selection-end-column="43" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#openFile#0;class#Controller#0" expanded="false" />
+            <element signature="method#ReadFile#0;class#Controller#0" expanded="false" />
+            <element signature="method#idexTable#0;class#Controller#0" expanded="false" />
+            <element signature="method#reset#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1589,6 +1677,18 @@
               <list>
                 <option value="0.2" />
                 <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
