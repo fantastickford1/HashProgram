@@ -202,6 +202,11 @@ public class Colisiones {
         }
         for (int i = 1;i <= tamaño;i++){
             int indexDato = indexGenerator(option,datos[i-1]);
+            while (indexDato > arreglo.length){
+                indexDato-= arreglo.length;
+                if (indexDato < 1)
+                    indexDato = 1;
+            }
             lista.modificarDato(indexDato,datos[i-1]);
         }
         for (int i = 1; i <= tamaño;i++){

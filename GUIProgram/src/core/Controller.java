@@ -2,6 +2,7 @@ package core;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -28,6 +29,7 @@ public class Controller implements Initializable {
     File textFile;
     Stage stage;
     String data;
+    Alert Result;
     int[] idsList; //Ids
     int[] indexs;
     int[][] doubleIndex;
@@ -386,15 +388,19 @@ public class Controller implements Initializable {
                 switch (colisionOption){
                     case "Prueba Lineal":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(1,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Prueba Cuadratica":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(1,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Doble Dirección Hash":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(1,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(1,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Encadenamiento":
                         String result;
@@ -422,15 +428,37 @@ public class Controller implements Initializable {
                 switch (colisionOption){
                     case "Prueba Lineal":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(2,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Prueba Cuadratica":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(2,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Doble Dirección Hash":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(2,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(2,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
+                        break;
+                    case "Encadenamiento":
+                        String result;
+                        result = bs.encadenamiento(Integer.parseInt(claveSearch),2,cl.getLista());
+                        if (result.compareTo("") == 0) {
+                            Result = new Alert(Alert.AlertType.ERROR);
+                            Result.setTitle("Error");
+                            Result.setHeaderText("Dato "+claveSearch+" no encontrado");
+
+                            Result.showAndWait();
+                        }else {
+                            Result = new Alert(Alert.AlertType.CONFIRMATION);
+                            Result.setTitle("Exito");
+                            Result.setHeaderText("Dato "+claveSearch+" encontrado");
+                            Result.setContentText("Indice: "+bs.getClave()+"\n" +
+                                    "Complejidad: " + bs.getContador());
+                            Result.showAndWait();
+                        }
                         break;
                     default:
                         break;
@@ -440,15 +468,37 @@ public class Controller implements Initializable {
                 switch (colisionOption){
                     case "Prueba Lineal":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(3,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Prueba Cuadratica":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(3,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Doble Dirección Hash":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(3,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(3,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
+                        break;
+                    case "Encadenamiento":
+                        String result;
+                        result = bs.encadenamiento(Integer.parseInt(claveSearch),3,cl.getLista());
+                        if (result.compareTo("") == 0) {
+                            Result = new Alert(Alert.AlertType.ERROR);
+                            Result.setTitle("Error");
+                            Result.setHeaderText("Dato "+claveSearch+" no encontrado");
+
+                            Result.showAndWait();
+                        }else {
+                            Result = new Alert(Alert.AlertType.CONFIRMATION);
+                            Result.setTitle("Exito");
+                            Result.setHeaderText("Dato "+claveSearch+" encontrado");
+                            Result.setContentText("Indice: "+bs.getClave()+"\n" +
+                                    "Complejidad: " + bs.getContador());
+                            Result.showAndWait();
+                        }
                         break;
                     default:
                         break;
@@ -458,15 +508,37 @@ public class Controller implements Initializable {
                 switch (colisionOption){
                     case "Prueba Lineal":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_lineal(4,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Prueba Cuadratica":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.prueba_cuadratica(4,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Doble Dirección Hash":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.dobleDireccion(4,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
                         break;
                     case "Arreglos Anidados":
                         auxTextArea.appendText("\nDato encontrado en la posicion ->" + bs.arreglosAnidados(4,indexSearch));
+                        auxTextArea.appendText("\nComplegidad -> "+ bs.contador);
+                        break;
+                    case "Encadenamiento":
+                        String result;
+                        result = bs.encadenamiento(Integer.parseInt(claveSearch),4,cl.getLista());
+                        if (result.compareTo("") == 0) {
+                            Result = new Alert(Alert.AlertType.ERROR);
+                            Result.setTitle("Error");
+                            Result.setHeaderText("Dato "+claveSearch+" no encontrado");
+
+                            Result.showAndWait();
+                        }else {
+                            Result = new Alert(Alert.AlertType.CONFIRMATION);
+                            Result.setTitle("Exito");
+                            Result.setHeaderText("Dato "+claveSearch+" encontrado");
+                            Result.setContentText("Indice: "+bs.getClave()+"\n" +
+                                    "Complejidad: " + bs.getContador());
+                            Result.showAndWait();
+                        }
                         break;
                     default:
                         break;

@@ -160,6 +160,11 @@ public class Busqueda {
         String datafound ="";
 
         clave = indexGenerator(option,dato);
+        while (clave > arreglo.length){
+            clave-= arreglo.length;
+            if (clave < 1)
+                clave = 1;
+        }
 
         NodeS<NodeS> result = lista.get(clave);
         String stringaux =""+result.getData();
